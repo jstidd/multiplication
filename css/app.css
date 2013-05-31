@@ -1,0 +1,28 @@
+html, body {}
+
+#multi-table {
+	border: 1px solid black;
+}
+#multi-table td {
+	border: 1px solid lightgray;
+	padding: 5px;
+    min-width: 40px;
+    min-height: 40px;
+	text-align: center;
+    font-size: 25px;
+}
+
+#multi-table td:hover {
+	color: red;
+	background-color: lightgray;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#table-top td {
+    font-weight: bold;
+    
+}
+
+#multi-table tr:first-child {font-weight: bold;}
+#multi-table td:first-child {font-weight:bold;}
