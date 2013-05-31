@@ -18,7 +18,12 @@ I haven't decided what platform to build this on.
 Step One
 --------
 
-I'm going to start simply by making in jQuery. I would like add a database to track statistics. 
+I'm going to start simply by making in jQuery. 
+
+The Future
+----------
+
+I would like add a database to track statistics. My kids love earning stuff in their video games. I thought it might be a good idea to have something to earn, and a character to give it to. 
 
 Please Help
 -----------
