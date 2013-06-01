@@ -1,7 +1,9 @@
 jQuery(document).ready(function($) {
   // Code using $ as usual goes here.
-
     
+    $('#select-color').change(function() {
+        $('#panel').css('background-color', $('#select-color').val());
+    });
     $('#multi-table td').click(function(){ 
         value = $(this).text();
         intValue = parseInt(value);
@@ -14,14 +16,16 @@ jQuery(document).ready(function($) {
     });
 
     $('#next-button').click(function() {
-        left = (Math.random() * 12 | 0) + 1;
-        right = (Math.random() * 12 | 0) + 1;
+        left = (Math.random() * $('#select-select').val() | 0) + 1;
+        right = (Math.random() * $('#select-select').val() | 0) + 1;
         $('#div-question').text(left + ' x ' + right);
         $('#show-answer').text('');
         $('#div-result').text('');
     });
     
-    left = (Math.random() * 12 | 0) + 1;
-    right = (Math.random() * 12 | 0) + 1;
+    left = (Math.random() * $('#select-select').val() | 0) + 1;
+    right = (Math.random() * $('#select-select').val() | 0) + 1;
     $('#div-question').text(left + ' x ' + right);
+    
+
 });

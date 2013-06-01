@@ -3,6 +3,9 @@ multiplication
 
 Help a child memorize the multiplication table.
 
+visit http://jstidd.github.io
+
+
 The Concept
 -----------
 
