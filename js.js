@@ -25,12 +25,18 @@ jQuery(document).ready(function($) {
 
 
     $('#next-button').click(function() {
+            next_problem(); 
+    });
+    
+    function next_problem() {
         left = (Math.random() * $('#select-select').val() | 0) + 1;
         right = (Math.random() * $('#select-select').val() | 0) + 1;
         $('#div-question').text(left + ' x ' + right);
         $('#show-answer').text('');
         $('#div-result').text('');
-    });
+        $('#show-answer').css($('#panel').css('color'));
+        $('#answer-input input').focus();
+    }
     
     left = (Math.random() * $('#select-select').val() | 0) + 1;
     right = (Math.random() * $('#select-select').val() | 0) + 1;
@@ -41,23 +47,29 @@ jQuery(document).ready(function($) {
     $('#multi-table td').click(function(){ 
         value = $(this).text();
         intValue = parseInt(value);
-        $('#show-answer').text(intValue);	
+        	
         if (intValue == (left * right)) {
             $('#div-result').text('Correct');
-            $('#show-answer').css($('#panel').css('color'));
+            $('#show-answer').css('color', $('#panel').css('color'));
 
         } else {
-            $('#div-result').text('Wrong');
+            $('#div-result').text('Try again.');
             $('#show-answer').css('color', 'red');
         }
+        $('#answer-input input').focus();
+        $('#show-answer').text(intValue);
     });
     
     
     // either input method
     $('#answer-input input').keyup(function(e) {
       if(e.keyCode == 13) {
- 	     text_input_function();
-          
+
+        if($('#answer-input input').val().length == 0) {
+            next_problem();
+        }  else {   	  
+            text_input_function();
+        } 
       }
 });
     $('#answer-input button').click(function() {
@@ -70,9 +82,9 @@ jQuery(document).ready(function($) {
         $('#answer-input input').val('');
         if (submitted_answer == (left * right)) {
             $('#div-result').text('Correct');
-            $('#show-answer').css($('#panel').css('color'));
+            $('#show-answer').css('color', $('#panel').css('color'));
         } else {
-            $('#div-result').text('Wrong');
+            $('#div-result').text('Try again.');
             $('#show-answer').css('color', 'red');
         }
         $('#show-answer').text(submitted_answer);

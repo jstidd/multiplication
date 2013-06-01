@@ -30,7 +30,7 @@ html, body {}
 #div-table {
 
     position: absolute;
-    top: 0px;
+    top:40px;
     left: 0px;
 }
 
@@ -40,7 +40,7 @@ html, body {}
     font-size: 30px;
     height: 500px;
     width: 350px;
-    top: 25px;
+    top: 40px;
     left: 720px;
     text-align:center;
 
@@ -150,4 +150,4 @@ html, body {}
     text-align: center;
 }
 
-p {font-size: 12px;}
+#panel p {font-size: 12px;}
