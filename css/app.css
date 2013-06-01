@@ -38,7 +38,7 @@ html, body {}
     
     position: absolute;
     font-size: 30px;
-    height: 400px;
+    height: 500px;
     width: 350px;
     top: 25px;
     left: 720px;
@@ -47,11 +47,13 @@ html, body {}
     border: 1px solid black;
 }
 
+
+
 #div-question {
     position: absolute;
     font-size: 30px;
     width: 150px;
-    top: 150px;
+    top: 200px;
     left: 0px;
     text-align:center;
 }
@@ -61,7 +63,7 @@ html, body {}
     position: absolute;
     font-size: 30px;
     width: 50px;
-    top: 150px;
+    top: 200px;
     left: 150px;
     text-align: center;
 }
@@ -71,7 +73,7 @@ html, body {}
     position: absolute;
     font-size: 30px;
     width: 150px;
-    top: 150px;
+    top: 200px;
     left: 180px;
     text-align:center;
 }
@@ -93,7 +95,7 @@ html, body {}
     position: absolute;
     font-size: 30px;
     width: 100%;
-    top: 50px;
+    top: 130px;
     left: 0px;
     text-align:center;
 
@@ -127,3 +129,25 @@ html, body {}
     text-align:center;   
     
 }
+
+#answer-input {
+    position: absolute;
+    top: 280px;
+    left: 0px;
+    align-content:center;
+}
+
+#answer-input input {
+    height: 60px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#answer-input button {
+    height: 60px;
+    width: 105px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {font-size: 12px;}

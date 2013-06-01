@@ -221,15 +221,24 @@
 </div>
 <div id="panel">   
  
+    
+       <!--   <select class="select-boxes" id="select-game">
+            <option value='0'>Click The Table</option>
+            <option value='1'>Type The Answer</option>
+           <!-- <option value='2'>Extreme Challenge</option>
+        </select> -->
+        <p>Click the table or type your answer. Answer as many times as you want.</p>
+        <p>Background color:
         <select class="select-boxes" id="select-color">
             <option>White</option>
             <option>Pink</option>
             <option>Green</option>
             <option>Blue</option>
             <option>Purple</option>
-            <option>yellow</option>
-            <option>red</option>
-        </select>
+            <option>Yellow</option>
+            <option>Red</option>
+        </select></p>
+        <p>Largest Number:
         <select class="select-boxes" id="select-select">
             <option>12</option>
             <option>11</option>
@@ -244,12 +253,20 @@
             <option>2</option>
             <option>1</option>        
         </select>
-
+            </p>
+    <hr />
+        <div id="div-result"></div>
     <div id="div-question"></div>
         <div id="div-equals">=</div>
     <div id="show-answer"></div>
+    <div id="answer-input">
+        <input type="text" />
+        <button>Check</button>
+        <p>(press 'Check' or hit enter on your keyboard. Hit enter again to advance to next problem.)</p>
+        <p id="test-answer"></p>
+    </div>
     <div><button id='next-button'>Next</button></div>
-    <div id="div-result"></div>
+
 </div>
     
 </body>
